@@ -1,0 +1,369 @@
+body {
+  background-color: #e7e5e7;
+  font-size: 1rem;
+}
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  background: #fff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+  background: #dccaff;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+  }
+  
+
+/* .navbar-brand {
+  color: blanchedalmond;
+  transform: rotate(13deg);
+  font-size: 2rem;
+} */
+.myBar {
+  background-color: #dccaff;
+  border-bottom: 3px solid white;
+}
+
+.myFooter {
+  background-color: white;
+  border: 3px solid #dccaff;
+}
+
+.myLink {
+  color: #6a138d;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.582);
+}
+
+.myLink:hover {
+  color: white;
+  background: #6a138d;
+}
+
+.hover-underline-animation {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  display: inline-block;
+  position: relative;
+  color: white;
+  text-shadow: 1px 1px 1px #555;
+}
+
+.hover-underline-animation:after, .mySocial:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #9100ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after, .mySocial:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar-toggler-icon {
+  color: #9100ca;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler-icon:hover {
+  color:#9100ca;
+}
+
+.contenitore {
+  width: 100vw;
+  height: 100vh;
+  border: 5px solid #dccaff;
+  position: fixed;
+  z-index: 2;
+}
+
+.myContainer {
+  padding-top: 15%;
+  width: 60vw;
+  margin: auto;
+}
+
+.myContainerStory {
+  padding-top: 5%;
+  width: 60vw;
+  margin: auto;
+}
+
+
+#alice {
+  width: 70%;
+  border-radius: 100%;
+  border: 4px dashed #dccaff;
+  margin-left: 15%;
+}
+
+#aliceGuitar {
+  width: 70%;
+  border-radius: 100%;
+  border: 4px dashed #dccaff;
+}
+
+#aliceTheatre {
+  width: 70%;
+  border-radius: 100%;
+  border: 4px dashed #dccaff;
+}
+
+#aliceComputer {
+  width: 70%;
+  border-radius: 100%;
+  border: 4px dashed #dccaff;
+}
+
+.myTitle {
+  font-family: 'Fredoka One', cursive;
+  color: #dccaff;
+  font-size: 5rem;
+  text-shadow: 1px 1px 3px #666;
+  position: absolute;
+  z-index: 2;
+}
+
+.myTitleContact {
+  font-family: 'Fredoka One', cursive;
+  color: #dccaff;
+  font-size: 4rem;
+  text-shadow: 1px 1px 3px #666;
+  position: absolute;
+  z-index: 2;
+  margin-left: -30%;
+}
+
+
+@media screen and (max-width:500px) {
+  .myTitle {
+    font-size: 1rem;
+    margin: auto;
+}
+}
+
+@media screen and (min-width:500px) {
+  .myTitle {
+    font-size: 2rem;
+    margin: auto;
+}
+}
+
+
+@media screen and (min-width:700px) {
+  .myTitle {
+      font-size: 3rem;
+      margin: auto;
+  }
+}
+
+@media screen and (min-width:850px) {
+  .myTitle {
+      font-size: 3.5rem;
+      margin: auto;
+  }
+}
+
+@media screen and (min-width:990px) {
+  .myTitle {
+      font-size: 4rem;
+      margin-left: -10%;
+  }
+}
+
+@media screen and (min-width:1130px) {
+  .myTitle {
+      font-size: 4.5rem;
+      margin-left: -10%;
+  }
+}
+
+.myIntro {
+  background: url(/assets/img/note.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  margin-top: 5.5rem;
+  width: 100%;
+  padding: 3%;
+  text-align: justify;
+  position: relative;
+  margin-left: -15%;
+  box-shadow: 1px 1px 3px rgba(102, 102, 102, 0.425);
+  border: 5px solid white;
+  font-size: 1rem;
+}
+
+@media screen and (max-width:500px) {
+  .myIntro {
+    margin-top: 5%;
+    font-size: 0.6rem;
+}
+}
+
+@media screen and (min-width:500px) {
+  .myIntro {
+    margin-top: 5%;
+    font-size: 0.7rem;
+}
+}
+
+
+@media screen and (min-width:700px) {
+  .myIntro {
+    margin-top: 15%;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .myIntro {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width:990px) {
+  .myIntro {
+      font-size: 1rem;
+  }
+}
+
+.mySocial {
+  color: #ceb5ff;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.myTesto {
+  padding: 1%;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.322);
+}
+
+.myLanguages {
+  position: absolute;
+}
+
+.myLanguages button {
+  color: white;
+  text-shadow: 1px 1px 1px #777;
+  border: 1px dashed white;
+  font-size: 0.8rem;
+}
+
+.myLanguages button:hover {
+  background-color: white;
+}
+
+.myHidden {
+  display: none;
+}
+
+/* my story  */
+
+.textGuitar, .textComputer {
+  width: 90%;
+  height: 95%;
+  padding: 2%;
+  background: white;
+  border-radius: 10px;
+  margin-left: -25%;
+  text-align: justify;
+}
+
+.textTheatre {
+  width: 90%;
+  height: 95%;
+  padding: 2%;
+  background: white;
+  border-radius: 10px;
+  margin-left: 35%;
+  z-index: 2;
+  text-align: justify;
+}
+
+@media screen and (max-width:500px) {
+  .textGuitar, .textTheatre, .textComputer {
+    font-size: 0.5rem;
+   margin: auto;
+}
+}
+
+@media screen and (min-width:500px) {
+  .textGuitar, .textTheatre, .textComputer {
+    font-size: 0.6rem;
+    margin: auto;
+}
+}
+
+
+@media screen and (min-width:700px) {
+  .textGuitar, .textTheatre, .textComputer {
+    font-size: 0.7rem;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .textGuitar, .textTheatre, .textComputer {
+   font-size: 0.9rem;
+   margin: auto;
+  }
+}
+
+@media screen and (min-width:990px) {
+  .textGuitar, .textTheatre, .textComputer {
+   font-size: 1rem;
+  }
+}
+
+/* animazione */
+
+
+.animated {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {transform: translateX(0) rotate(1deg);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px) rotate(6deg);}
+  20%, 40%, 60%, 80% {transform: translateX(10px) rotate(-6deg);}
+}
+
+@keyframes shake {
+  0%, 100% {transform: translateX(0) rotate(1deg);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px) rotate(6deg);}
+  20%, 40%, 60%, 80% {transform: translateX(10px) rotate(-6deg);}
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
