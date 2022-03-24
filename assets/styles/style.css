@@ -7,6 +7,13 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  color: #a71adf;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -107,7 +114,8 @@ body {
 }
 
 .myContainerStory {
-  padding-top: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   width: 60vw;
   margin: auto;
 }
@@ -140,114 +148,126 @@ body {
 
 .myTitle {
   font-family: 'Fredoka One', cursive;
+  width: 150%;
   color: #dccaff;
-  font-size: 5rem;
+  font-size: 4rem;
   text-shadow: 1px 1px 3px #666;
-  position: absolute;
+  position: relative;
+  line-height: 2.4rem;
   z-index: 2;
 }
 
 .myTitleContact {
   font-family: 'Fredoka One', cursive;
   color: #dccaff;
-  font-size: 4rem;
+  font-size: 3.4rem;
   text-shadow: 1px 1px 3px #666;
-  position: absolute;
+  position: relative;
   z-index: 2;
   margin-left: -30%;
+  width: 200%;
 }
 
 
 @media screen and (max-width:500px) {
-  .myTitle {
+  .myTitle, .myTitleContact {
     font-size: 1rem;
     margin: auto;
+    width: 100%;
+}
+#alice {
+  margin-top: 15%;
+}
+.mySocial {
+  font-size: 0.7rem;
+  margin: 0.5%;
+}
+.textGuitar, .textComputer, .myTesto {
+  font-size: 0.4rem;
+}
+.myContainerStory {
+  padding-top: 25%;
+  padding-bottom: 25%;
 }
 }
 
-@media screen and (min-width:500px) {
-  .myTitle {
-    font-size: 2rem;
-    margin: auto;
-}
+@media screen  and (min-width: 500px) and (max-width:700px) {
+  .myTitle, .myTitleContact  {
+      font-size: 2rem;
+      margin: auto;
+      width: 100%;
+  }
+  #alice {
+    margin-top: 5%;
+  }
+  .textGuitar, .textComputer, .myTesto {
+    font-size: 0.5rem;
+  }
+  .myContainerStory {
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
 }
 
+@media screen and (min-width: 700px) and (max-width:850px) {
+  .myTitle, .myTitleContact  {
+      font-size: 2.3rem;
+      margin: auto;
+      width: 100%;
+  }
+  #alice {
+    margin-top: 5%;
+  }
+  .textGuitar, .textComputer, .myTesto {
+    font-size: 0.6rem;
+  }
+}
 
-@media screen and (min-width:700px) {
-  .myTitle {
+@media screen and (min-width: 850px) and (max-width:990px) {
+  .myTitle, .myTitleContact  {
+      font-size: 2.5rem;
+      width: 110%;
+  }
+  .textGuitar, .textComputer, .myTesto {
+    font-size: 0.7rem;
+  }
+  .myContainerStory {
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width:1200px) {
+  .myTitle, .myTitleContact  {
+      width: 130%;
       font-size: 3rem;
-      margin: auto;
+      margin-left: -30%;
+  }
+  .textGuitar, .textComputer, .myTesto {
+    font-size: 0.9rem;
   }
 }
 
-@media screen and (min-width:850px) {
+@media screen and (min-width: 1200px)  {
   .myTitle {
-      font-size: 3.5rem;
-      margin: auto;
+      width: 150%;
+      margin-left: -30%;
   }
-}
 
-@media screen and (min-width:990px) {
-  .myTitle {
-      font-size: 4rem;
-      margin-left: -10%;
-  }
-}
-
-@media screen and (min-width:1130px) {
-  .myTitle {
-      font-size: 4.5rem;
-      margin-left: -10%;
-  }
 }
 
 .myIntro {
   background: url(/assets/img/note.jpg);
   background-size: cover;
   border-radius: 10px;
-  margin-top: 5.5rem;
+  margin-top: 0.5rem;
   width: 100%;
   padding: 3%;
   text-align: justify;
   position: relative;
-  margin-left: -15%;
   box-shadow: 1px 1px 3px rgba(102, 102, 102, 0.425);
   border: 5px solid white;
   font-size: 1rem;
-}
-
-@media screen and (max-width:500px) {
-  .myIntro {
-    margin-top: 5%;
-    font-size: 0.6rem;
-}
-}
-
-@media screen and (min-width:500px) {
-  .myIntro {
-    margin-top: 5%;
-    font-size: 0.7rem;
-}
-}
-
-
-@media screen and (min-width:700px) {
-  .myIntro {
-    margin-top: 15%;
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .myIntro {
-    margin: auto;
-  }
-}
-
-@media screen and (min-width:990px) {
-  .myIntro {
-      font-size: 1rem;
-  }
 }
 
 .mySocial {
@@ -265,13 +285,13 @@ body {
 }
 
 .myLanguages {
-  position: absolute;
+  position: relative;
 }
 
 .myLanguages button {
-  color: white;
+  color: rgb(0, 0, 0);
   text-shadow: 1px 1px 1px #777;
-  border: 1px dashed white;
+  border: 1px dashed #ac83ff;
   font-size: 0.8rem;
 }
 
@@ -287,29 +307,33 @@ body {
 
 .textGuitar, .textComputer {
   width: 90%;
-  height: 95%;
-  padding: 2%;
+  height: 100%;
+  padding: 5%;
   background: white;
   border-radius: 10px;
   margin-left: -25%;
   text-align: justify;
+  position: relative;
+  z-index: 2;
 }
 
 .textTheatre {
   width: 90%;
-  height: 95%;
-  padding: 2%;
+  height: 100%;
+  padding: 5%;
   background: white;
   border-radius: 10px;
   margin-left: 35%;
   z-index: 2;
   text-align: justify;
+  position: relative;
+  z-index: 2;
 }
 
 @media screen and (max-width:500px) {
   .textGuitar, .textTheatre, .textComputer {
     font-size: 0.5rem;
-   margin: auto;
+    margin: auto;
 }
 }
 
