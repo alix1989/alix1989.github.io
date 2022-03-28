@@ -11,4 +11,6 @@ $(() => {
         $('#langIta').addClass('myHidden');
         $('#lang').removeClass('myHidden');
     });
+
+    $('.carousel').carousel('cycle')
 })
