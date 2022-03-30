@@ -9,12 +9,9 @@
     <!-- bootstrap -->
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'
         integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous'>
-    <script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js'
-        integrity='sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB'
-        crossorigin='anonymous'></script>
-    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js'
-        integrity='sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13'
-        crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,36 +21,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
     <!-- styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/styles/style.css" />
     <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="/assets/js/script.js"></script>
 </head>
 
 <body>
 
     <!-- -----NAVBAR----- -->
     <header>
-        <nav class="navbar navbar-expand-lg sticky-top bg-lightViolet myNav">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+        <nav class="navbar navbar-expand-lg sticky-top myNav">
+            <div class="myContNav">
+                <button class="navbar-toggler ms-auto " type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="myToggler"><i class="bi bi-list"></i></span>
+                    <span class="myToggler h1"><i class="bi bi-list"></i></span>
                 </button>
-                <div class="collapse navbar-collapse myCollapse justify-content-center" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a href="#" title="Start" class="nav-link link-nav" aria-current="page"><i
+                <div class="collapse navbar-collapse h3" id="navbarNavAltMarkup">
+                    <div class="navbar-nav myCollapse">
+                        <a href="#" title="Start" class="nav-link link-nav m-2" aria-current="page"><i
                                 class="bi bi-house"></i></a>
-                        <a href="#about" class="nav-link link-nav" title="About me"><i class="bi bi-eyeglasses"></i>
+                        <a href="#about" class="nav-link link-nav m-2" title="About me"><i
+                                class="bi bi-eyeglasses"></i>
                         </a>
-                        <a href="#work" class="nav-link link-nav" title="Works"><i
+                        <a href="#work" class="nav-link link-nav m-2" title="Works"><i
                                 class="bi bi-pc-display-horizontal"></i>
                         </a>
-                        <a href="#contact" class="nav-link link-nav" title="Contact me!"><i
+                        <a href="#contact" class="nav-link link-nav m-2" title="Contact me!"><i
                                 class="bi bi-chat-left-text"></i>
                         </a>
                     </div>
@@ -62,18 +56,18 @@
         </nav>
     </header>
     <main>
-        <div class="myTornaSu"><a href="#" title="Torna su!"><i class="bi bi-arrow-up-circle"></i></a></div>
+        <button onclick="topFunction()" id="myTornaSu" type="button" class="btn" title="Torna su!"><i class="bi bi-arrow-up-circle"></i></button>
         <div class="container myContainer">
             <div class="row">
                 <div class="col-md-6 myCol"><img src="/assets/img/alice.jpg" alt="disegno Alice"
                         style="width:100%; border-radius: 100%; border: 5px solid #dccaff"></div>
                 <div class="col-md-6 myCol">
-                    <div class="myTitle display-5 mt-3" id="social">Hello, I'm Alice Vigo</div>
+                    <div class="myTitle mt-3 display-1" id="social">Hello, I'm Alice Vigo</div>
                     <div class="myText h3">Ciao! Mi chiamo Alice e sei incappato nella mia pagina web. Sono una
                         Front-End Developer che ha appena concluso un
                         intenso percorso d'apprendimento su <a href="https://epicode.com/" target="blank">Epicode
                             School</a> che mi ha aiutata ad approfondire le mie conoscenze di
-                        <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>
+                        <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>,
                         <strong>JavaScript</strong>, <strong>TypeScript</strong> e <strong>Angular</strong>.
                         Buon divertimento!<br>
                     </div>
@@ -90,6 +84,9 @@
 
                         <a title="Facebook" href="https://www.facebook.com/alice.vigo" target="blank"><i
                                 class="bi bi-facebook"></i></a>
+
+                        <a title="Download my CV!" href="/assets/download/cvAliceVigo.pdf" download="CVAliceVigo" style="color:#06b600"><i class="bi bi-cloud-download"></i>
+                        </a>
                         </li>
                     </div>
                 </div>
@@ -106,9 +103,9 @@
         <!-- ABOUT ME -->
         <div class="container-fluid bg-lightViolet">
             <div class="container">
-                <div class="myTitle text-center text-white display-3">About Me</div>
+                <div class="myTitle text-center text-white display-1">About Me</div>
                 <div class="row">
-                    <div class="col-md-6 myText h4 myCol">Sono nata il 21/06/1989 a Genova e vivo ad Arquata Scrivia
+                    <div class="col-md-6 myText h3 myCol">Sono nata il 21/06/1989 a Genova e vivo ad Arquata Scrivia
                         (AL) da quando ho circa sei anni.
                         La scuola? Mi è sempre piaciuta, mi ha sempre incuriosita, mi ha sempre divertita, sebbene
                         non fossi una cima con i voti... In fondo sono sempre stata un'artista.
@@ -126,12 +123,12 @@
                             style="width:100%; border-radius: 100%; border: 5px dashed white"></div>
                     <div class="col-md-6 myCol"><img src="/assets/img/aliceTeatro.jpg" alt="disegno Alice che canta"
                             style="width:100%; border-radius: 100%; border: 5px dashed white"></div>
-                    <div class="col-md-6 myText h4 myCol">Nel 2011 decido quindi di lasciare la band e trasferirmi a
+                    <div class="col-md-6 myText h3 myCol">Nel 2011 decido quindi di lasciare la band e trasferirmi a
                         <em>Milano</em>, dove ho iniziato un percorso alla <a href="https://www.lascuoladelmusical.com/"
                             target="_blank">Scuola del Musical</a>, in
                         cui ho
                         sviluppato la mia passione per la musica e per il canto ed ho approfondito la mia vocazione
-                        per la recitazione. Mi sono diplomata due anni dopo, dopo non pochi sacrifici,
+                        per la recitazione. Mi sono diplomata nel 2013, dopo non pochi sacrifici,
                         provini e delusioni. Sono quindi tornata a casa, dove ho dovuto accantonare i sogni ed ho
                         iniziato a lavorare poco dopo come commessa per un negozio multimarca della zona.
                         Nel frattempo, oltre alla mia passione per videogames, serie tv, cinema e fumetti, sono
@@ -139,7 +136,7 @@
                         potrebbe sembrare strano, è proprio da qui che è nata la mia passione per la
                         programmazione...
                     </div>
-                    <div class="col-md-6 myText h4 myCol">
+                    <div class="col-md-6 myText h3 myCol">
                         Le schede dei personaggi sono modificabili via HTML e CSS: da qui inizio ad appassionarmi
                         sempre di più, a sperimentare con animazioni, colori, tante - troppe - ricerche su Google
                         ed un'infinita pazienza che mi ha portata anche a dare una mano a degli amici con lo
@@ -167,7 +164,7 @@
 
         <!-- LAVORI -->
         <div class="container underWave">
-            <div class="myTitle text-center display-3">Qualche mio lavoro...</div>
+            <div class="myTitle text-center display-1">Qualche mio lavoro...</div>
             <div class="myCarousel">
                 <div class="carouselContainer">
                     <div class="carouselImgs slide">
@@ -222,14 +219,14 @@
                     </div>
                     <span class="prev" id="prev">
                         <i class="bi bi-arrow-left-circle-fill"></i> </span>
-                            <span class="next" id="next"> <i class="bi bi-arrow-right-circle-fill"></i> </span>
+                    <span class="next" id="next"> <i class="bi bi-arrow-right-circle-fill"></i> </span>
                 </div>
             </div>
             <div class="container">
-                <div class="myTitle display-5 mt-4"> <a href="https://crm-3fa5c.web.app/" target="_blank"
+                <div class="myTitle display-4 mt-4"> <a href="https://crm-3fa5c.web.app/" target="_blank"
                         title="Link al sito - non funzionante"><i class="bi bi-link"></i>
                     </a>Gestionale CRM</div>
-                <div class="myText h4 mt-2">Questo è il progetto finale della mia esperienza in Epicode: consiste
+                <div class="myText h3 mt-2">Questo è il progetto finale della mia esperienza in Epicode: consiste
                     nella creazione di un'applicazione SPA con <b>Angular</b>,
                     con la possibilità di effettuare il Login, la Registrazione, di consultare una Lista Clienti con
                     rispettive Fatture, aggiungerne, modificarne ed eliminarne.
@@ -238,10 +235,10 @@
                     a causa di un conflitto, se interessati vi consiglio il download del progetto da Git. -> <a
                         title="GitHub" class="mySocialLink" href="https://github.com/alix1989/FE07B_ProgettoFinale_Vigo"
                         target="blank"><i class="bi bi-github"></i></a></div>
-                <div class="myTitle display-5 mt-1"> <a href="https://fake-netflix-49a7c.web.app/" target="_blank"
+                <div class="myTitle display-4 mt-1"> <a href="https://fake-netflix-49a7c.web.app/" target="_blank"
                         title="Link al sito - non funzionante"><i class="bi bi-link"></i>
                     </a>Fake Netflix</div>
-                <div class="myText h4 mt-2 pb-5">Progetto eseguito come esercizio settimanale durante il mio percorso in
+                <div class="myText h3 mt-2 pb-5">Progetto eseguito come esercizio settimanale durante il mio percorso in
                     Epicode. Ho utilizzato <b>Angular</b> e <i>Bootstrap</i>, e l'applicazione
                     dà la possibilità di iscrizione al sito, consultazione di una pagina di film (tramite API) e il
                     modo di creare una lista di preferiti per utente. La pagina su Firebase non è del tutto fruibile a
@@ -259,13 +256,14 @@
         <!-- CONTATTI-->
         <div class="container-fluid bg-lightViolet myLast">
             <div class="container" style="margin-top: -10%">
-                <div class="myTitle display-3 text-center text-white">Hey, vuoi contattarmi?</div>
+                <div class="myTitle display-1 text-center text-white">Hey, vuoi contattarmi?</div>
                 <div class="row">
-                    <div class="col-md-6 myCol"><img src="/assets/img/alice.jpg" alt="disegno Alice"
+                    <div class="col-md-6 myCol"><img src="/assets/img/aliceCell.jpg" alt="disegno Alice al cellulare"
                             style="width:100%; border-radius: 100%; border: 5px dashed white"></div>
                     <div class="col-md-6">
-                        <div class="h3 myText">Se vuoi, puoi scrivermi sui <a href="#social">social</a>! Altrimenti:</div>
-                        <div class="h3">
+                        <div class="h3 myText">Se vuoi, puoi scrivermi sui <a href="#">social</a>! Altrimenti:
+                        </div>
+                        <div class="h3 ms-5">
                             <ul class="navbar-nav">
                                 <li class="p-3"><i class="bi bi-envelope"></i> <a class="myLink"
                                         href="mailto:vigo.alice@gmail.com" target="_blank"
@@ -303,6 +301,12 @@
         </div>
         <!-- Copyright -->
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+        <script src="/assets/js/script.js"></script>
+
 </body>
 
 </html>

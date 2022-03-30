@@ -14,6 +14,8 @@ a:hover {
   color: #22263a;
 }
 
+
+
 .bg-violet {
   background-color: #dccaff;
 }
@@ -28,9 +30,13 @@ a:hover {
 }
 
 /* NAVBAR */
+.myContNav {
+  margin: auto;
+}
 
 .myNav {
   border-bottom: 2px solid white;
+  position: fixed;
 }
 
 /* .myBrand {
@@ -40,26 +46,25 @@ a:hover {
 } */
 
 .myToggler {
-  color: white;
+  color: #ac94dd;
+  background-color: #ececec;
   text-shadow: 1px 1px 1px #666;
+  margin: auto;
 }
 
-.myCollapse a {
-  color: white;
+.myCollapse > a {
+  color: #ac94dd;
   letter-spacing: 2px;
-  font-size: 2rem;
-  margin: 0rem 4rem;
+  padding: 0 1rem;
 }
 
-.myCollapse a:hover,
-:active {
+.myCollapse a:hover {
   color: #22263a;
 }
-
 /* HOMEPAGE */
 
 .myContainer {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .myCol {
@@ -83,9 +88,10 @@ a:hover {
 } */
 
 .myText {
+  background: #ececec9d;
   border-top: 5px dashed #dccaff;
   margin-top: 3rem;
-  padding: 2rem 0;
+  padding: 3rem;
   text-align: justify;
 }
 
@@ -199,15 +205,14 @@ a:hover {
     padding-bottom: 10rem;
 }
 
-.myTornaSu {
+#myTornaSu {
   border-radius: 100%;
   right: 3%;
-  bottom: 15%;
+  bottom: 10%;
   position: fixed;
   text-align: center;
   font-size: 4rem;
-  width: 3rem;
-  height: 3rem;
   z-index: 3;
   color: black;
+  display: none;
 }
