@@ -14,8 +14,6 @@ a:hover {
   color: #22263a;
 }
 
-
-
 .bg-violet {
   background-color: #dccaff;
 }
@@ -32,6 +30,7 @@ a:hover {
 /* NAVBAR */
 .myContNav {
   margin: auto;
+  color: #130c17;
 }
 
 .myNav {
@@ -213,4 +212,18 @@ a:hover {
   z-index: 3;
   color: black;
   display: none;
+}
+
+#collasso {
+  color: white;
+}
+
+#collasso:hover {
+  color: #22263a;
+}
+/* PROVA PER TROPPO TESTO */
+@media screen and (max-width: 780px) {
+  .myContenuto {
+    display: none;
+  }
 }
