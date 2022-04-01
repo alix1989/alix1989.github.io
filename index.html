@@ -30,7 +30,7 @@
 
     <!-- -----NAVBAR----- -->
     <header>
-        <nav class="navbar navbar-expand-lg sticky-top myNav">
+        <nav class="navbar navbar-expand-lg sticky-top myNav" id="myNav">
             <div class="myContNav">
                 <button class="navbar-toggler ms-auto " type="button" data-toggle="collapse"
                     data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -59,10 +59,10 @@
         <button onclick="topFunction()" id="myTornaSu" type="button" class="btn" title="Torna su!"><i class="bi bi-arrow-up-circle"></i></button>
         <div class="container myContainer">
             <div class="row">
-                <div class="col-md-6 myCol"><img src="/assets/img/alice.jpg" alt="disegno Alice"
+                <div class="col-md-6 myCol"><img class="disegno" src="/assets/img/alice.jpg" alt="disegno Alice"
                         style="width:100%; border-radius: 100%; border: 5px solid #dccaff"></div>
                 <div class="col-md-6 myCol">
-                    <div class="myTitle mt-3 display-1" id="social">Hello, I'm Alice Vigo</div>
+                    <div class="myTitle mt-3 display-1">Hello, I'm Alice Vigo</div>
                     <div class="myText h3">Ciao! Mi chiamo Alice e sei incappato nella mia pagina web. Sono una
                         Front-End Developer che ha appena concluso un
                         intenso percorso d'apprendimento su <a href="https://epicode.com/" target="blank">Epicode
@@ -118,10 +118,10 @@
                         ogni genere di locale, dai bar all'Estragon di Bologna, per fare un esempio.
                         Ma nonostante tutto, il tarlo che stava crescendomi in testa era uno soltanto: il Musical.
                     </div>
-                    <div class="col-md-6 myCol"><img src="/assets/img/aliceChitarra.jpg"
+                    <div class="col-md-6 myCol"><img class="disegno" src="/assets/img/aliceChitarra.jpg"
                             alt="disegno Alice con chitarra"
                             style="width:100%; border-radius: 100%; border: 5px dashed white"></div>
-                    <div class="col-md-6 myCol"><img src="/assets/img/aliceTeatro.jpg" alt="disegno Alice che canta"
+                    <div class="col-md-6 myCol"><img class="disegno" src="/assets/img/aliceTeatro.jpg" alt="disegno Alice che canta"
                             style="width:100%; border-radius: 100%; border: 5px dashed white"></div>
                     <div class="col-md-6 myText h3 myCol">Nel 2011 decido quindi di lasciare la band e trasferirmi a
                         <em>Milano</em>, dove ho iniziato un percorso alla <a href="https://www.lascuoladelmusical.com/"
@@ -150,7 +150,7 @@
                         professione. Dopo svariati corsi acquistati online, è stato il turno di Epicode, che mi ha
                         portata fino a qui.
                     </div>
-                    <div class="col-md-6 myCol"><img src="/assets/img/alicePC.jpg" alt="disegno Alice con PC"
+                    <div class="col-md-6 myCol"><img class="disegno" src="/assets/img/alicePC.jpg" alt="disegno Alice con PC"
                             style="width:100%; border-radius: 100%; border: 5px dashed white"></div>
                 </div>
             </div>
@@ -165,7 +165,7 @@
         <!-- LAVORI -->
         <div class="container underWave">
             <div class="myTitle text-center display-1">Qualche mio lavoro...</div>
-            <div class="myCarousel">
+            <div class="myCarousel disegno">
                 <div class="carouselContainer">
                     <div class="carouselImgs slide">
                         <img src="/assets/img/CRM/coverCRM.png" style="width: 100%;">
@@ -256,12 +256,12 @@
         <!-- CONTATTI-->
         <div class="container-fluid bg-lightViolet myLast">
             <div class="container" style="margin-top: -10%">
-                <div class="myTitle display-1 text-center text-white">Hey, vuoi contattarmi?</div>
-                <div class="row">
-                    <div class="col-md-6 myCol"><img src="/assets/img/aliceCell.jpg" alt="disegno Alice al cellulare"
-                            style="width:100%; border-radius: 100%; border: 5px dashed white"></div>
+                <div class="myTitle display-1 text-center text-white" style="z-index: 3">Hey, vuoi contattarmi?</div>
+                <div class="row" style="z-index: 3">
+                    <div class="col-md-6 myCol"><img class="disegno" src="/assets/img/aliceCell.jpg" alt="disegno Alice al cellulare"
+                            style="width:100%; border-radius: 100%; border: 5px dashed white; z-index: 3"></div>
                     <div class="col-md-6">
-                        <div class="h3 myText">Se vuoi, puoi scrivermi sui <a href="#">social</a>! Altrimenti:
+                        <div class="h3 myText" style="z-index: 3">Se vuoi, puoi scrivermi sui <a href="#">social</a>! Altrimenti:
                         </div>
                         <div class="h3 ms-5">
                             <ul class="navbar-nav">
@@ -286,7 +286,7 @@
 
     <!-- FOOTER -->
 
-    <footer class="text-center text-lg-start fixed-bottom myFooter h5 mb-0">
+    <footer id="myFooter" class="text-center text-lg-start fixed-bottom myFooter h5 mb-0">
         <!-- Copyright -->
         <div class="text-center p-3">
             <!-- <ul class="navbar-nav ms-auto d-none d-lg-inline-flex myLanguages">
@@ -295,6 +295,10 @@
                     <button id ="langIta" type="button" class="btn active myHidden">ITA</button>
                 </li>
             </ul> -->
+            <button type="button" id="dark" class="btn" onclick="darkMode()" title="Dark Mode"><i class="bi bi-lightbulb-fill"></i>
+                </button>
+            <button style="display: none; filter: brightness(2); color: white" type="button" id="light" class="btn" onclick="window.location.reload();" title="Light Mode"><i class="bi bi-lightbulb"></i>
+            </button>
             © 2022 Copyright:
             Alice Vigo; Drawings by: <a href="https://www.instagram.com/covellinebones/?hl=it" class="myLink"
                 target="_blank">Noemi Frezza</a>
