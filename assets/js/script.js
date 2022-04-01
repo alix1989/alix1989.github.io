@@ -117,3 +117,35 @@ function onImages() {
     disegni[i].style.opacity = '0.8'
   }
 }
+
+
+
+//prova collapsible about me
+function queryCollapse(x) {
+  if (x.matches) { // If media query matches
+    document.getElementById('collasso').classList.add('myCollassabile');
+    document.getElementById('collasso').style.cursor = "pointer";
+    document.getElementById('collasso').append(' ~ click')
+  } else {
+    return 
+  }
+}
+
+var x = window.matchMedia("(max-width: 780px)")
+queryCollapse(x) // Call listener function at run time
+x.addListener(queryCollapse) // Attach listener function on state changes
+
+let coll = document.getElementsByClassName("myCollassabile");
+
+for (let i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
