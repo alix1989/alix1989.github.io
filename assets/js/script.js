@@ -49,3 +49,71 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+function darkMode() {
+  document.getElementById('light').style.display = 'inline-block';
+  document.getElementById('dark').style.display = 'none'
+
+  document.body.style.backgroundColor="#111";
+  document.getElementById('work').style.opacity = '0.6'
+  document.getElementById('contact').style.opacity = '0.6'
+  document.getElementById('myFooter').style.backgroundColor = "#000";
+  document.getElementById('myFooter').style.color = "#777";
+  document.getElementById('myFooter').style.border = "3px solid #444";
+  document.getElementById('myTornaSu').style.color = "#777";
+  
+
+
+  let texts = document.getElementsByClassName('myText');
+  let links = document.getElementsByTagName('a');
+  // cambio colore dei link
+  for(let o=0; o<links.length; o++) {
+    links[o].style.color = '#2b004a';
+  }
+  // cambio colore dei testi
+	for(let i = 0; i < texts.length; i++){
+		texts[i].style.backgroundColor = "#222";
+    texts[i].style.color = "#999";
+    texts[i].style.borderTop = '5px dashed #000';
+	}
+  //altre funzioni
+  onTitoli()
+  onViolet()
+  onLightViolet()
+  onImages()
+}
+
+function onTitoli() {
+  let titles = document.getElementsByClassName('myTitle');
+  for(let i = 0; i < titles.length; i++){
+    titles[i].style.color = "#2b004a";
+	}
+}
+
+function onViolet() {
+  let violet = document.getElementsByClassName('bg-violet');
+  for(let i = 0; i < violet.length; i++){
+    violet[i].style.backgroundColor = "#333";
+    violet[i].style.border= '5px dashed black'
+	}
+}
+
+function onLightViolet() {
+  let lightViolet = document.getElementsByClassName('bg-lightViolet');
+  let myWave = document.getElementsByClassName('myWave');
+  for(let i = 0; i<lightViolet.length; i++) {
+    lightViolet[i].style.backgroundColor = '#938C9F'
+  }
+  for(let i = 0; i<myWave.length; i++) {
+    myWave[i].style.opacity = '0.6'
+  }
+}
+
+function onImages() {
+  let disegni = document.getElementsByClassName('disegno');
+  for(let i = 0; i < disegni.length; i++) {
+    disegni[i].style.opacity = '0.8'
+  }
+}
