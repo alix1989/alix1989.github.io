@@ -227,3 +227,19 @@ a:hover {
     display: none;
   }
 }
+
+
+
+.myHidden {
+  display: none;
+}
+
+
+
+.btnLang {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px #777;
+  border: 1px dashed #ac83ff;
+  font-size: 0.8rem;
+}
+
